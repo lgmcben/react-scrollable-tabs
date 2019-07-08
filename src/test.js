@@ -12,4 +12,10 @@ describe('ScrollableTabs', () => {
     const wrapper = shallow(<ScrollableTabs />);
     expect(wrapper.find('div').length).toEqual(1);
   });
+
+  it('should render 3 <p />', () => {
+    const wrapper = shallow(<ScrollableTabs />);
+    expect(wrapper.find('p').length).toEqual(3);
+  });
+
 })
