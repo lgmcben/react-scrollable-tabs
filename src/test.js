@@ -13,8 +13,17 @@ describe('ScrollableTabs', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
 
-  it('should render 3 <p />', () => {
-    expect(wrapper.find('p').length).toEqual(3);
+  it('should render x number of tabs according to tabs prop', () => {
+    const tabs = [
+      { name: 'tab 1'},
+      { name: 'tab 2'},
+      { name: 'tab 3'}
+    ];
+
+    wrapper.setProps({
+      tabs
+    });
+    expect(wrapper.find('.tab').length).toEqual(tabs.length);
   });
 
 })
