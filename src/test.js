@@ -4,17 +4,16 @@ import ScrollableTabs from './'
 
 
 describe('ScrollableTabs', () => {
-  it('is truthy', () => {
-    expect(ScrollableTabs).toBeTruthy()
-  })
+
+  let wrapper;
+
+  beforeEach(() => wrapper = shallow(<ScrollableTabs />));
 
   it('should render a <div />', () => {
-    const wrapper = shallow(<ScrollableTabs />);
     expect(wrapper.find('div').length).toEqual(1);
   });
 
   it('should render 3 <p />', () => {
-    const wrapper = shallow(<ScrollableTabs />);
     expect(wrapper.find('p').length).toEqual(3);
   });
 
