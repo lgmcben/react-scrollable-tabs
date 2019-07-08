@@ -5,17 +5,19 @@ import styles from './styles.css'
 
 export default class ExampleComponent extends Component {
   static propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    numTabs: PropTypes.number
   }
 
   render() {
     const {
-      text
+      numTabs
     } = this.props
 
     return (
       <div className={styles.test}>
-        Example Component: {text}
+        This is a scrollable tab <br/>
+        number of tabs: {numTabs}
       </div>
     )
   }
