@@ -18,6 +18,9 @@ export default class ScrollableTabs extends Component {
       <div className={styles.test}>
         This is a scrollable tab <br/>
         number of tabs: {numTabs}
+        <p>test p 1</p>
+        <p>test p 2</p>
+        <p>test p 3</p>
       </div>
     )
   }
