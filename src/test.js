@@ -1,7 +1,8 @@
-import ExampleComponent from './'
+import ScrollableTabs from './'
 
-describe('ExampleComponent', () => {
+
+describe('ScrollableTabs', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ScrollableTabs).toBeTruthy()
   })
 })
