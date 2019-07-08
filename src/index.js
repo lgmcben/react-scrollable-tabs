@@ -5,22 +5,28 @@ import styles from './styles.css'
 
 export default class ScrollableTabs extends Component {
   static propTypes = {
-    text: PropTypes.string,
-    numTabs: PropTypes.number
+    tabs: PropTypes.array
   }
 
+  renderTabs = () => {
+    const tabs = this.props.tabs.map((item, index) => {
+      return (
+        <div className='tab' key={index}>
+          tab {item.name}
+        </div>
+      );
+    })
+
+    return tabs;
+  }
   render() {
     const {
-      numTabs
+      tabs
     } = this.props
 
     return (
       <div className={styles.test}>
-        This is a scrollable tab <br/>
-        number of tabs: {numTabs}
-        <p>test p 1</p>
-        <p>test p 2</p>
-        <p>test p 3</p>
+        {this.renderTabs()}
       </div>
     )
   }
