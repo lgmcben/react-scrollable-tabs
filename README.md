@@ -15,12 +15,12 @@ npm install --save react-scrollable-tabs
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-scrollable-tabs'
+import ScrollableTabs from 'react-scrollable-tabs'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <ScrollableTabs />
     )
   }
 }
