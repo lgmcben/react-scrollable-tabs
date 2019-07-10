@@ -1,33 +1,30 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
 import styles from './styles.css'
 
-export default class ScrollableTabs extends Component {
-  static propTypes = {
-    tabs: PropTypes.array
-  }
+const renderTabs = () => {
+  const tabs = this.props.tabs.map((item, index) => {
+    return (
+      <div className='tab' key={index}>
+        tab {item.name}
+      </div>
+    );
+  })
+  return tabs;
+}
 
-  renderTabs = () => {
-    const tabs = this.props.tabs.map((item, index) => {
-      return (
-        <div className='tab' key={index}>
-          tab {item.name}
-        </div>
-      );
-    })
+export default ScrollableTabs = () => {
+  // static propTypes = {
+  //   tabs: PropTypes.array
+  // }
 
-    return tabs;
-  }
-  render() {
     const {
       tabs
     } = this.props
-
+    
     return (
       <div className={styles.test}>
         {this.renderTabs()}
       </div>
-    )
-  }
+    );
 }
