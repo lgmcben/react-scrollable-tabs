@@ -8,7 +8,7 @@ const ScrollableTabs = (props) => {
     } = props
     
     return (
-      <div className={styles.test}>
+      <div className={styles.container}>
         {renderTabs(tabs)}
       </div>
     );
