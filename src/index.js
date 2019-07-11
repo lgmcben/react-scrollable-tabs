@@ -14,6 +14,14 @@ const ScrollableTabs = (props) => {
     );
 }
 
+const Tab = (props) => {
+  return (
+    <div className={styles.tab}>
+      {props.name}
+    </div>
+  );
+}
+
 ScrollableTabs.propTypes = {
   tabs: PropTypes.array
 }
@@ -22,7 +30,7 @@ const renderTabs = (tabs) => {
   const tabsJsx = tabs.map((item, index) => {
     return (
       <div className='tab' key={index}>
-        {item.name}
+        <Tab name={item.name} />
       </div>
     );
   })
