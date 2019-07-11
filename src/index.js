@@ -15,7 +15,7 @@ const ScrollableTabs = (props) => {
     );
 }
 
-const Tab = (props) => {
+export const Tab = (props) => {
   return (
     <StyledTab {...props}>
       {props.name}
