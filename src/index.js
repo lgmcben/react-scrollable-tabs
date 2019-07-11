@@ -3,10 +3,6 @@ import PropTypes from 'prop-types'
 import styles from './styles.css'
 
 const ScrollableTabs = (props) => {
-  // static propTypes = {
-  //   tabs: PropTypes.array
-  // }
-
     const {
       tabs
     } = props
@@ -18,6 +14,9 @@ const ScrollableTabs = (props) => {
     );
 }
 
+ScrollableTabs.propTypes = {
+  tabs: PropTypes.array
+}
 
 const renderTabs = (tabs) => {
   const tabsJsx = tabs.map((item, index) => {
