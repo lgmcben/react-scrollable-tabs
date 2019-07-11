@@ -15,24 +15,25 @@ const ScrollableTabs = (props) => {
     );
 }
 
-// const Tab = (props) => {
-//   return (
-//     <StyledTab paddingLeft={props.paddingLeft}>
-//       {props.name}
-//     </StyledTab>
-//   );
-// }
+const Tab = (props) => {
+  return (
+    <StyledTab {...props}>
+      {props.name}
+    </StyledTab>
+  );
+}
 
 ScrollableTabs.propTypes = {
   tabs: PropTypes.array
 }
 
 const renderTabs = (tabs) => {
-  const tabsJsx = tabs.map((item, index) => {
+    const tabsJsx = tabs.map((item, index) => {
+    const tabProps = {
+      name: item.name
+    }
     return (
-        <StyledTab key={index}>
-             {item.name}
-        </StyledTab>
+        <Tab key={index} {...tabProps} />
     );
   })
   return tabsJsx;
