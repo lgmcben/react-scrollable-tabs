@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ScrollableTabs from './'
+import ScrollableTabs, { Tab } from './'
 
 
 describe('ScrollableTabs', () => {
@@ -33,7 +33,7 @@ describe('ScrollableTabs', () => {
 
     // console.log('wrapper.debug()', wrapper.debug());
 
-    expect(wrapper.find('.tab').length).toEqual(tabs.length);
+    expect(wrapper.find(Tab).length).toEqual(tabs.length);
   });
 
 })
