@@ -31,8 +31,3 @@ https://iamsteve.me/blog/entry/using-flexbox-for-horizontal-scrolling-navigation
 .container::-webkit-scrollbar {
   display: none; }
 
-.tab {
-  flex: 0 0 auto;
-  padding-left: 1vw;
-  padding-right: 1vw;
-}

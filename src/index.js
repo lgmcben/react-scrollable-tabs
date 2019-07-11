@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components';
 import styles from './styles.css'
 
 const ScrollableTabs = (props) => {
@@ -16,9 +17,9 @@ const ScrollableTabs = (props) => {
 
 const Tab = (props) => {
   return (
-    <div className={styles.tab}>
+    <StyledTab>
       {props.name}
-    </div>
+    </StyledTab>
   );
 }
 
@@ -36,5 +37,11 @@ const renderTabs = (tabs) => {
   })
   return tabsJsx;
 }
+
+const StyledTab = styled.div`
+  flex: 0 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+`
 
 export default ScrollableTabs;
