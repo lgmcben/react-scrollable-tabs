@@ -22,7 +22,7 @@ const renderTabs = (tabs) => {
   const tabsJsx = tabs.map((item, index) => {
     return (
       <div className='tab' key={index}>
-        tab {item.name}
+        {item.name}
       </div>
     );
   })
