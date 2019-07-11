@@ -60,5 +60,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "styled-components": "^4.3.2"
+  }
 }
