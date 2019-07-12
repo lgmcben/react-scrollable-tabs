@@ -42,7 +42,7 @@ const renderTabs = (tabs) => {
 const StyledTab = styled.div`
   flex: 0 0 auto;
   padding-left: ${props => props.paddingLeft || '1vw'};
-  padding-right: 1vw;
+  padding-right: ${props => props.paddingRight || '1vw'};
 `
 
 export default ScrollableTabs;
