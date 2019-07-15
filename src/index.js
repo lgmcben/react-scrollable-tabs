@@ -10,7 +10,7 @@ const ScrollableTabs = (props) => {
     
     return (
       <StyledContainer>
-        {renderTabs(tabs)}
+        {props.children}
       </StyledContainer>
     );
 }
