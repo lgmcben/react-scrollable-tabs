@@ -24,6 +24,14 @@ export default class App extends Component {
           <Tab name='tab 15' />
           <Tab name='tab 16' />
         </ScrollableTabs>
+
+        <br/>
+        <div>
+          content 1
+        </div>
+        <div>
+          content 2
+        </div>
       </div>
     )
   }
