@@ -6,7 +6,7 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <ScrollableTabs> 
+        <ScrollableTabs clickHandler={()=> console.log('on click')}> 
           <Tab name='tab 1' />
           <Tab name='tab 2' />
           <Tab name='tab 3' />
