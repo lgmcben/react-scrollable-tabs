@@ -5,14 +5,10 @@ import ScrollableTabs, { Tab } from './'
 
 describe('ScrollableTabs', () => {
 
-  const props = {
-    tabs: []
-  }
-
   let wrapper;
 
   beforeEach(
-    () => wrapper = shallow(<ScrollableTabs {...props} />)
+    () => wrapper = shallow(<ScrollableTabs />)
   );
 
   it('renders correctly', () => {
