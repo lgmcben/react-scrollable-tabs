@@ -21,6 +21,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": undefined,
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -61,6 +62,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": undefined,
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": null,
