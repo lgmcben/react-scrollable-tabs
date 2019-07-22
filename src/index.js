@@ -5,11 +5,11 @@ import styles from './styles.css'
 
 const ScrollableTabs = (props) => {
     const {
-      tabs
+      clickHandler
     } = props
     
     return (
-      <StyledContainer>
+      <StyledContainer onClick={clickHandler}>
         {props.children}
       </StyledContainer>
     );
@@ -24,7 +24,7 @@ export const Tab = (props) => {
 }
 
 ScrollableTabs.propTypes = {
-  tabs: PropTypes.array
+  tabs: PropTypes.func
 }
 
 const renderTabs = (tabs) => {
