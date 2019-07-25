@@ -27,6 +27,10 @@ ScrollableTabs.propTypes = {
   tabs: PropTypes.func
 }
 
+Tab.propTypes = {
+  paddingLeft: PropTypes.string
+}
+
 const renderTabs = (tabs) => {
     const tabsJsx = tabs.map((item, index) => {
     const tabProps = {
