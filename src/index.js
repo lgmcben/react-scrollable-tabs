@@ -24,7 +24,7 @@ export const Tab = (props) => {
 }
 
 ScrollableTabs.propTypes = {
-  tabs: PropTypes.func
+  clickHandler: PropTypes.func
 }
 
 Tab.propTypes = {
