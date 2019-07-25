@@ -31,18 +31,6 @@ Tab.propTypes = {
   paddingLeft: PropTypes.string
 }
 
-const renderTabs = (tabs) => {
-    const tabsJsx = tabs.map((item, index) => {
-    const tabProps = {
-      name: item.name
-    }
-    return (
-        <Tab key={index} {...tabProps} />
-    );
-  })
-  return tabsJsx;
-}
-
 /*
 reference:
 https://iamsteve.me/blog/entry/using-flexbox-for-horizontal-scrolling-navigation
